@@ -1,4 +1,4 @@
-# Random Load for k8s
+# Random Load image
 
 This is a simple docker image to situmlate the pod usage(cpu & memory).
 
@@ -39,3 +39,7 @@ memRange:
   - 1024
   - 2048
 ```
+
+## Todo
+
+- [ ] it's doesn't work in k8s
