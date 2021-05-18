@@ -8,7 +8,7 @@ When you use this, you must write a config file like `config-1.yaml`, and pass i
 ## Config
 
 ```
-mod: <cpu> | <memory>  # thie is tool can run cpu or memory
+mod: <cpu> | <memory>  # mod can run cpu or memory
 delayStart(second): a array of limit range
 cpuRange(percentage) | memory(MB): a array of limit range
 runRange(second): a array of excution time range
@@ -40,6 +40,10 @@ memRange:
   - 2048
 ```
 
+simply you can run:
+```bash
+cargo run -- -c config-1.yaml
+```
 ## Todo
 
 - [ ] it's doesn't work in k8s
