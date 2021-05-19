@@ -50,7 +50,7 @@ impl fmt::Display for MemoryLoadUnit {
 impl MemoryLoad {
     pub fn new() -> MemoryLoadBuilder {
         MemoryLoadBuilder {
-            delay_start: (Duration::from_secs(0), Duration::from_secs(0)),
+            delay_start: (Duration::from_secs(0), Duration::from_secs(1)),
             mem_range: MemoryLoadUnit::unit_count_range((100, 500)),
             run_range: (Duration::from_secs(60), Duration::from_secs(120)),
         }

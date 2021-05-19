@@ -1,4 +1,4 @@
-use clap::{App, Arg, SubCommand};
+use clap::{App, Arg};
 use std::thread;
 use std::{fs::File, io::Read};
 use yaml_rust::YamlLoader;
@@ -112,6 +112,6 @@ fn load_file(file: &str) {
     }
 
     for t in tvec {
-        t.join();
+        t.join().unwrap();
     }
 }

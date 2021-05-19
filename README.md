@@ -4,6 +4,7 @@ This is a simple docker image to situmlate the pod usage(cpu & memory).
 
 When you use this, you must write a config file like `config-1.yaml`, and pass it to pod.
 
+cpu stress supported by `stress-ng`
 
 ## Config
 
@@ -44,6 +45,3 @@ simply you can run:
 ```bash
 cargo run -- -c config-1.yaml
 ```
-## Todo
-
-- [ ] it's doesn't work in k8s

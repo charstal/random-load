@@ -6,8 +6,8 @@ runRange:
   - 50
   - 60
 cpuRange:
-  - 70
-  - 80
+  - 50
+  - 60
 ---
 mod: memory
 delayStart:
