@@ -56,7 +56,7 @@ impl CpuLoad {
 
         Command::new("stress-ng")
             .arg("-c")
-            .arg("0")
+            .arg("1")
             .arg("-l")
             .arg(util.to_string())
             .arg("--timeout")
